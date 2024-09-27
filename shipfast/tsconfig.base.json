@@ -1,0 +1,81 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "types": ["@types/gtag.js"],
+    "paths": {
+      "@shipfast/cli": ["packages/internal/cli"],
+      "@shipfast/infra-core": ["packages/infra/infra-core/src/index.ts"],
+      "@shipfast/infra-shared": ["packages/infra/infra-shared/src/index.ts"],
+      "@shipfast/tools": ["packages/internal/tools/src/index.ts"],
+      "@shipfast/webapp-api-client": [
+        "packages/webapp-libs/webapp-api-client/src/index.ts"
+      ],
+      "@shipfast/webapp-api-client/*": [
+        "packages/webapp-libs/webapp-api-client/src/*"
+      ],
+      "@shipfast/webapp-contentful": [
+        "packages/webapp-libs/webapp-contentful/src/index.ts"
+      ],
+      "@shipfast/webapp-contentful/*": [
+        "packages/webapp-libs/webapp-contentful/src/*"
+      ],
+      "@shipfast/webapp-core": [
+        "packages/webapp-libs/webapp-core/src/index.ts"
+      ],
+      "@shipfast/webapp-core/*": ["packages/webapp-libs/webapp-core/src/*"],
+      "@shipfast/webapp-crud-demo": [
+        "packages/webapp-libs/webapp-crud-demo/src/index.ts"
+      ],
+      "@shipfast/webapp-crud-demo/*": [
+        "packages/webapp-libs/webapp-crud-demo/src/*"
+      ],
+      "@shipfast/webapp-documents": [
+        "packages/webapp-libs/webapp-documents/src/routes/index.ts"
+      ],
+      "@shipfast/webapp-documents/*": [
+        "packages/webapp-libs/webapp-documents/src/*"
+      ],
+      "@shipfast/webapp-emails": [
+        "packages/webapp-libs/webapp-emails/src/index.ts"
+      ],
+      "@shipfast/webapp-emails/*": ["packages/webapp-libs/webapp-emails/src/*"],
+      "@shipfast/webapp-finances": [
+        "packages/webapp-libs/webapp-finances/src/index.ts"
+      ],
+      "@shipfast/webapp-finances/*": [
+        "packages/webapp-libs/webapp-finances/src/*"
+      ],
+      "@shipfast/webapp-generative-ai": [
+        "packages/webapp-libs/webapp-generative-ai/src/index.ts"
+      ],
+      "@shipfast/webapp-generative-ai/*": [
+        "packages/webapp-libs/webapp-generative-ai/src/*"
+      ],
+      "@shipfast/webapp-notifications": [
+        "packages/webapp-libs/webapp-notifications/src/index.ts"
+      ],
+      "@shipfast/webapp-notifications/*": [
+        "packages/webapp-libs/webapp-notifications/src/*"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,50 @@
+---
+title: Run new project
+description: Setup a fresh project with ShipFast.dev
+pagination_next: working/index
+---
+
+import ProjectName from '../../shared/components/ProjectName.component';
+import Requirements from './_requirements.mdx';
+import InstallDeps from './_install-deps.mdx';
+import StartApp from './_start-app.mdx';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
+
+## Fresh project setup
+
+This guide should be followed right after initializing an empty repository with <ProjectName/> project. If you'd like to start with an already existing project, please visit [Launch existing project](./run-existing-project).
+
+<Requirements />
+
+## Environment setup
+
+<InstallDeps />
+
+### Adjust `.env.shared` files
+
+Copy `.env.shared` to `.env` in the project root and `./packages/backend/.env.shared` to `./packages/backend/.env` and adjust the values to your needs.
+
+:::caution
+
+Never store any secret values in those files!
+
+:::
+
+### `.env.shared` (in project root)
+
+| Name           | Example | Description                                                                         |
+|----------------|---------|-------------------------------------------------------------------------------------|
+| `PROJECT_NAME` | `myapp` | The name of your project (best if 3-5 characters to avoid AWS names being too long) |
+
+### `./packages/backend/.env.shared`
+
+| Name                     | Example                            | Description                                                                                        |
+|--------------------------|------------------------------------|----------------------------------------------------------------------------------------------------|
+| `DJANGO_SECRET_KEY`      | `Zs639zRcb5!9om2@tW2H6XG#Znj^TB^I` | 50-character random string; [docs](https://docs.djangoproject.com/en/3.1/ref/settings/#secret-key) |
+| `HASHID_FIELD_SALT`      | `t5$^r*xsMRXn1xjzhRSl8I5Hb3BUW$4U` | 50-character random string; [docs](https://django-hashid-field.readthedocs.io/en/latest/)          |
+| `ADMIN_EMAIL`            | `admin@example.com`                | Will be used to create the first super admin user                                                  |
+| `ADMIN_DEFAULT_PASSWORD` | `AvPZpabgj9Z8`                     | Will be used to create the first super admin user                                                  |
+
+<StartApp />

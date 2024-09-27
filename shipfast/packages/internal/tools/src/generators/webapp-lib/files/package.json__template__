@@ -1,0 +1,15 @@
+{
+  "name": "@shipfast/<%= projectName %>",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit --project tsconfig.lib.json"
+  },
+  "dependencies": {
+    "@shipfast/webapp-api-client": "*",
+    "@shipfast/webapp-core": "*"
+  }
+}

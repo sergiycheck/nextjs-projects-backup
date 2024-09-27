@@ -1,0 +1,9 @@
+{
+  "name": "@shipfast/core",
+  "version": "0.0.1",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "envalid": "^7.3.1",
+    "lookpath": "^1.2.2"
+  }
+}
